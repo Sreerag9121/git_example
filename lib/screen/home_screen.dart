@@ -9,6 +9,13 @@ class MyHomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Home Page'),
       ),
+      body: ListView.builder(
+        itemBuilder: (context,index){
+          return ListTile(
+            title: Text('person $index'),
+          );
+        }
+        ),
     );
   }
 }
